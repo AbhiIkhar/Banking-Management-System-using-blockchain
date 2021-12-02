@@ -13,8 +13,9 @@ public class Block {
         this.ifscCode=ifscCode;
         this.branchName=branchName;
         this.accountNumber=accountNumber;
-        this.hash = calculateHash();
         this.timestamp = new Date.getTime();
+        this.hash = calculateHash();
+       
     }
 
 
