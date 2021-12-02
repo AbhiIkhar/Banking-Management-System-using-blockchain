@@ -14,7 +14,7 @@ public class Block {
         this.branchName=branchName;
         this.accountNumber=accountNumber;
         this.hash = calculateHash();
-
+        this.timestamp = new Date.getTime();
     }
 
 
@@ -30,6 +30,10 @@ public class Block {
 
     public String getHash(){
         return this.hash;
+    }
+    
+    public String getPreviousHash(){
+        return this.previousHash;
     }
 
 
