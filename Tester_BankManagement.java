@@ -20,8 +20,10 @@ public class Tester_BankManagement {
         //First Test Block
 
         blocks.add(0,new Block("0","Test","0000","branch",100100100));
+        System.out.println("Hash "+blocks.get(0).getHash());
+        System.out.println("Calc hash "+blocks.get(0).calculateHash());
         //modify this later  ; for test purpose we are creating 5 accounts
-        for(int i=1;i<3;i++){
+        for(int i=1;i<4;i++){
 
             System.out.println("Please enter user details");
             System.out.print("Name : ");
@@ -36,6 +38,9 @@ public class Tester_BankManagement {
             if(BlockValidator.blockverifier()) {
                 blocks.add(i, new Block(prevHash, name, ifscCode, branch, acno));
                 System.out.println("Account Created , Your Hash is :" + blocks.get(i).getHash());
+                System.out.println("Previous Hash :"+blocks.get(i).getPreviousHash());
+                System.out.println("Caluclated hash :"+blocks.get(i).calculateHash());
+               // System.out.println(blocks.get(i).getAccountNumber());
             }
             else{
                 System.out.println("There is some problem in block chain ");
@@ -48,4 +53,3 @@ public class Tester_BankManagement {
 
 
     }
-}
