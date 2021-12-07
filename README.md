@@ -1,4 +1,4 @@
-# Banking-Management-Sys
+# Banking-Management-System using Blockchain
 We are building a banking management sys using blockchain in java. </br>
 </br>
 As the Blockchain world is booming ; there are many companies, music platform , logistics who are adapting the blockchain technology . Integrating Banking system with Blockchain technology can uplift the exisiting system and help for achieving a more secure and un-hackable network.The main advantages of Blockchain technology in banking sector are that it improves efficiency, enhances security, unchangeable records, quick transaction time and no third party involvement thus decreasing costs.One of the main advantages of blockchain is the history of immutable transactions. Any purchases that have been made once cannot be removed.</br>
